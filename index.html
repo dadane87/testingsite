@@ -1,0 +1,78 @@
+<html>
+
+    <head>
+        
+        <title>JQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style type="text/css">
+            button {
+				background-color: #4CAF50; /* Green */
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				float: bottom;
+			}
+			#circle {
+				background-color: green;
+				border-radius: 50%;
+				float:bottom;
+				width: 100px;
+				height: 100px;
+				margin: 10px;				
+			}
+			
+			#circle2 {
+				background-color: green;
+				border-radius: 50%;
+				float:bottom;
+				width: 100px;
+				height: 100px;
+				margin: 10px;				
+			}
+			
+			.squares {
+				background-color: red;
+				float:bottom;
+				width: 100px;
+				height: 100px;	
+				margin: 10px;
+			}
+			
+			#hiddenText {
+				display: none; 
+			}
+        </style>
+    
+    </head>
+
+    <body>
+        
+		<div id="circle"></div>
+		<div class="squares"></div>
+		<div class="squares"></div>
+		
+		<p id="wonder"></p>
+		
+		<p id="fadingP">Click button to remove text</p>
+		<button id="btnOne">Text 1</button>
+		<button id="btnTwo">Text 2</button>
+		
+		<p id="hiddenText">U r not gonna see this</p>
+		
+		
+		<div id="circle2"></div>
+		
+	<script type="text/javascript">
+
+		$.get("info.txt", function(data) {
+			alert(data);
+		});
+
+	</script>
+    </body>
+
+</html>
